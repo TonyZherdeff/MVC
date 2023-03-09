@@ -105,7 +105,7 @@ class Control:
             res = Model.new_article('./log.txt')
             View.print_list(res)
         elif buf == "2":
-            art_info = str(input("Введите через точку с запятой данные в следующем порядке:\n 'Название статьи:Автор;"
+            art_info = str(input("Введите через точку с запятой данные в следующем порядке:\n 'Название статьи;Автор;"
                                  "Количество символов;Название издательства;Описание'\n"))
             Model.add_new_article('./log.txt', art_info)
             View.ready_info()
